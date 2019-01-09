@@ -8,7 +8,7 @@ const sidedrawer = props => {
     return (
         <div className={classes.Sidedrawer}>
             <Logo height="11%" />
-            <nav>
+            <nav style={{ marginTop: '2rem' }}>
                 <NavigationItems />
             </nav>
         </div>
