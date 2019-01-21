@@ -42,9 +42,9 @@ class ContactData extends Component {
         value: ""
       },
       email: {
-        elementType: "email",
+        elementType: "input",
         elementConfig: {
-          type: "text",
+          type: "email",
           placeholder: "Your email"
         },
         value: ""
@@ -94,7 +94,6 @@ class ContactData extends Component {
 
     let form = (
       <form>
-        
         {formElementsArray.map(element => (
           <Input
             key={element.id}
