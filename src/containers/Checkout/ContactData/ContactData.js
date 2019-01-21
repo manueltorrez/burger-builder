@@ -20,7 +20,8 @@ class ContactData extends Component {
           required: true
         },
         valid: false,
-        touched: false
+        touched: false,
+        errorMessage: "Name is required."
       },
       street: {
         elementType: "input",
@@ -33,7 +34,8 @@ class ContactData extends Component {
           required: true
         },
         valid: false,
-        touched: false
+        touched: false,
+        errorMessage: "Street is required."
       },
       zipCode: {
         elementType: "input",
@@ -48,7 +50,8 @@ class ContactData extends Component {
           maxLength: 5
         },
         valid: false,
-        touched: false
+        touched: false,
+        errorMessage: "Enter a 5 digit code."
       },
       country: {
         elementType: "input",
@@ -61,7 +64,8 @@ class ContactData extends Component {
           required: true
         },
         valid: false,
-        touched: false
+        touched: false,
+        errorMessage: "Country is required."
       },
       email: {
         elementType: "input",
@@ -74,7 +78,8 @@ class ContactData extends Component {
           required: true
         },
         valid: false,
-        touched: false
+        touched: false,
+        errorMessage: "Enter a valid email."
       },
       deliveryMethod: {
         elementType: "select",
@@ -169,6 +174,7 @@ class ContactData extends Component {
             invalid={!element.config.valid}
             shouldValidate={element.config.validation ? true : false}
             touched={element.config.touched}
+            errorMessage={element.config.errorMessage}
             changed={event => this.inputChangedHandler(event, element.id)}
           />
         ))}

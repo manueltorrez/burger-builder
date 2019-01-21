@@ -29,3 +29,11 @@
   border: 1px solid red;
   background-color: #f89b90;
 }
+
+.ValidationError {
+  all: unset;
+  color: red;
+  font-family: 'CooperHewittBook';
+  display: block;
+  margin-top: 0.5rem;
+}
